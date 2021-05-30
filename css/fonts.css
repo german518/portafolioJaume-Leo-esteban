@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(/webfontkitpoppins/poppins-thin-webfont.woff2) format("woff2"),
+         url(/webfontkitpoppins/poppins-thin-webfont.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Oxygen";
+    src: url(/webfontkitoxygen/oxygen-light-webfont.woff2) format("woff2"),
+         url(/webfontkitoxygen/oxygen-light-webfont.woff) format("woff");
+}

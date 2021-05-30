@@ -1,0 +1,103 @@
+.testimony{
+        padding-block-start: 40px;
+        padding-block-end: 40px;
+    }
+.testimony__image {
+    max-inline-size: 100%;
+    }
+
+.testimony__description{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    font: var(--body1);
+    }
+
+.testimony__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-inline-size: 500px;
+    margin: auto;
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 2px 6px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 40px );
+    -webkit-backdrop-filter: blur( 40px );
+    border-radius: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    font: var(--headline5);
+    box-shadow: 4px 4px 1px var(--white) inset; 
+    gap: 16px;
+    color: var(--purple);
+    }
+.testimony__container .testimony__autor{
+    font: var(--headline5);
+    opacity: 0.5;
+}
+
+.testimony__container img{
+    max-inline-size: 64px;
+}
+
+
+@media screen and (min-width: 768px){
+    .testimony{
+        display:flex;
+        align-items: center;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    
+    .testimony:nth-of-type(1) .testimony__image, .testimony:nth-of-type(5) .testimony__image{
+        order: 2;
+        flex:2;
+        text-align: center;
+    }
+
+    .testimony__image{
+        flex-grow: 1;
+        }
+
+    .testimony__description{
+        display:inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        font: var(--body1);
+        }
+
+    .testimony__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-inline-size: 1132px;
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 2px 6px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 40px );
+    -webkit-backdrop-filter: blur( 40px );
+    border-radius: 24px;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    font: var(--headline6);
+    text-align: center;
+    box-shadow: 4px 4px 1px var(--white) inset; 
+    }
+.testimony__container .testimony__autor{
+    font: var(--headline5);
+    opacity: 0.5;
+}
+
+.testimony__container img{
+    max-inline-size: 80px;
+}
+}
